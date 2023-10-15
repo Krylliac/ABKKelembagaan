@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="0dp"
+        android:id="@+id/cv_jabatan"
+        android:background="@color/colorCardSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/tvJabatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Jabatan"
+                android:textSize="14sp"
+                android:textColor="@color/colorText1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/nama_jabatan"
+                    android:layout_below="@id/tvJabatan"
+                    android:text="ini siapa"
+                    android:textSize="20dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText2"/>
+                <ImageView
+                    android:id="@+id/hapus_jabatan"
+                    android:layout_width="0dp"
+                    android:src="@drawable/ic_btn_delete"
+                    android:tint="@color/colorText2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+                <ImageView
+                    android:id="@+id/edit_jabatan"
+                    android:layout_width="0dp"
+                    android:src="@drawable/ic_btn_edit"
+                    android:tint="@color/colorText2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

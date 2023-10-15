@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDashboard">#000000</color>
+    <color name="colorPrimaryDarkDashboard">#000000</color>
+    <color name="colorAccentDashboard">#656565</color>
+    <color name="colorPrimary">#101010</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#656565</color>
+    <color name="colorPrimaryUraian">#101010</color>
+    <color name="colorPrimaryDarkUraian">#101010</color>
+    <color name="colorAccentUraian">#656565</color>
+    <color name="colorPrimaryRincian">#101010</color>
+    <color name="colorPrimaryDarkRincian">#101010</color>
+    <color name="colorAccentRincian">#656565</color>
+    <color name="colorPrimaryExport">#101010</color>
+    <color name="colorPrimaryDarkExport">#101010</color>
+    <color name="colorAccentExport">#656565</color>
+    <color name="colorError">#ebebeb</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#555555</color>
+    <color name="colorText1">#b8b8b8</color>
+    <color name="colorText2">#ebebeb</color>
+    <color name="colorTextBtn">#fefefe</color>
+    <color name="colorPutih">#fff</color>
+    <color name="colorAbu2">#e8e8e8</color>
+    <color name="colorMenuLogo">#ebebeb</color>
+    <color name="colorBG">#000000</color>
+    <color name="colorGaris">#555555</color>
+    <color name="colorCard">#000000</color>
+    <color name="colorCardSecond">#101010</color>
+    <color name="colorSplash">#000000</color>
+    <color name="colorAbout">#000000</color>
+    <color name="colorTextAlert">#dc6640</color>
+</resources>

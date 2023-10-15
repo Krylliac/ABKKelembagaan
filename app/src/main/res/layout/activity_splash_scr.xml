@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSplash"
+    android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+    tools:context=".SplashScrActivity">
+
+    <ImageView
+        android:id="@+id/ivJatengprov"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:src="@drawable/jatengprov"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvSetda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivJatengprov"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="SEKRETARIAT DAERAH"
+        android:textColor="@color/colorText2"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tvJatengprov"
+        android:layout_below="@+id/tvSetda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROVINSI JAWA TENGAH"
+        android:textSize="21sp"
+        android:textColor="@color/colorText2"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

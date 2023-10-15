@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".ABK.TampilDetailAbkRincian">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryRincian"
+        app:title="Detail Rincian Tugas"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:layout_collapseMode="pin" />
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDetail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_below="@+id/garis1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Rincian Tugas"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/tv2"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/rincian_tugas"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorText2"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/garis2"
+                        android:layout_below="@+id/rincian_tugas"
+                        android:background="@color/colorGaris"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_below="@+id/garis2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Sifat Pekerjaan"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/sifat_pekerjaan"
+                        android:layout_below="@+id/tv3"
+                        android:layout_marginBottom="4dp"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorText2"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDetail2"
+                android:layout_below="@+id/cvDetail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jumlah/Beban Tugas"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/beban_kerja"
+                        android:layout_below="@id/tv4"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorText2"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/garis4"
+                        android:layout_below="@+id/beban_kerja"
+                        android:background="@color/colorGaris"/>
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_below="@+id/garis4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Waktu Penyelesaian"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/waktu_penyelesaian"
+                        android:layout_below="@+id/tv5"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorText2"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/garis5"
+                        android:layout_below="@+id/waktu_penyelesaian"
+                        android:background="@color/colorGaris"/>
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_below="@+id/garis5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Satuan Waktu Penyelesaian"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/satuan"
+                        android:layout_below="@id/tv6"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorText2"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:id="@+id/garis6"
+                        android:layout_below="@+id/satuan"
+                        android:background="@color/colorGaris"/>
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_below="@+id/garis6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Jumlah Pegawai yang Dibutuhkan"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorText1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/pegawai_dibutuhkan"
+                        android:layout_below="@id/tv7"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="@color/colorText2"
+                        android:text="ini siapa"
+                        android:textSize="18dp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

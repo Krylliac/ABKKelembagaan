@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "427039231476",
+    "firebase_url": "https://abkkelembagaan.firebaseio.com",
+    "project_id": "abkkelembagaan",
+    "storage_bucket": "abkkelembagaan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427039231476:android:0b16f2028119a1d3837da1",
+        "android_client_info": {
+          "package_name": "com.example.abkkelembagaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427039231476-qlfh2krknpqubgn7eqekh5bfhma9de76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abkkelembagaan",
+            "certificate_hash": "445b3b9b022e58a3521b33b8e99f9fec03ff4d81"
+          }
+        },
+        {
+          "client_id": "427039231476-5jssjpa0mi2skjo03b2hc6fhu6t84br9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBURvsClUUC95GW9BRl2tRiKpzQAPNRSIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427039231476-5jssjpa0mi2skjo03b2hc6fhu6t84br9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

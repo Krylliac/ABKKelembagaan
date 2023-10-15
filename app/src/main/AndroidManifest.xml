@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abkkelembagaan">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_abk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_abk_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ABK.ExportJabatan"></activity>
+        <activity android:name=".ABK.EditDetailAbkRincian" />
+        <activity android:name=".ABK.TampilDetailAbkRincian" />
+        <activity android:name=".ABK.TambahDetailAbkRincian" />
+        <activity
+            android:name=".ABK.TampilSemuaAbkJabatan"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ABK.TampilSemuaAbkUraian" />
+        <activity android:name=".ABK.TampilSemuaAbkRincian" />
+        <activity android:name=".TampilRincianTugas" />
+        <activity
+            android:name=".TampilSemuaRincianUraianTugas"
+            android:parentActivityName=".RincianJabatan" />
+        <activity
+            android:name=".RincianJabatan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TampilSemuaUraianJabatan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExportActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".TampilJabatan" />
+        <activity
+            android:name=".TambahJabatan"
+            android:parentActivityName=".TampilSemuaJabatan" />
+        <activity
+            android:name=".TampilSemuaJabatan"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditRincianTugas"
+            android:parentActivityName=".DetailRincianTugas" />
+        <activity
+            android:name=".DetailRincianTugas"
+            android:parentActivityName=".TampilSemuaRincianTugas" />
+        <activity
+            android:name=".TampilUraianTugas"
+            android:parentActivityName=".TampilSemuaUraianTugas" />
+        <activity
+            android:name=".SplashScrActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity
+            android:name=".TambahRincianTugas"
+            android:parentActivityName=".TampilSemuaRincianTugas" />
+        <activity
+            android:name=".TambahUraianTugas"
+            android:parentActivityName=".TampilSemuaUraianTugas" />
+        <activity
+            android:name=".TampilSemuaRincianTugas"
+            android:parentActivityName=".TampilSemuaRincianUraianTugas" />
+        <activity
+            android:name=".TampilSemuaUraianTugas"
+            android:parentActivityName=".TampilSemuaUraianJabatan" />
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

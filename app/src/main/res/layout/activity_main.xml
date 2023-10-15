@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDashboard"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:stateListAnimator="@null" >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimaryDashboard"
+            app:title="Analisis Beban Kerja"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:expandedTitleGravity="center"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDashboard"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvJabatan"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivJabatan"
+                        android:layout_margin="4dp"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_jabatan"
+                        android:tint="@color/colorMenuLogo"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tvJabatan"
+                        android:layout_below="@+id/ivJabatan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Jabatan"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUraiankerja"
+                android:layout_toRightOf="@+id/cvJabatan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivUraiankerja"
+                        android:layout_margin="4dp"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/uraian_kerja"
+                        android:tint="@color/colorMenuLogo"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tvUraiankerja"
+                        android:layout_below="@+id/ivUraiankerja"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Uraian Tugas"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvRincianTugas"
+                android:layout_below="@+id/cvJabatan"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivRinciantugas"
+                        android:layout_margin="4dp"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/rincian_tugas"
+                        android:tint="@color/colorMenuLogo"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tvRinciantugas"
+                        android:layout_below="@+id/ivRinciantugas"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Rincian Tugas"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAbk"
+                android:layout_below="@+id/cvUraiankerja"
+                android:layout_toRightOf="@id/cvRincianTugas"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivABK"
+                        android:layout_margin="4dp"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_book"
+                        android:tint="@color/colorMenuLogo"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tvABK"
+                        android:layout_below="@+id/ivABK"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="ABK"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvExport"
+                android:layout_below="@+id/cvRincianTugas"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivExport"
+                        android:layout_margin="4dp"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_import_export"
+                        android:tint="@color/colorMenuLogo"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/tvExport"
+                        android:layout_below="@+id/ivExport"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Ekspor Data"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSettings"
+                android:layout_below="@+id/cvRincianTugas"
+                android:layout_toRightOf="@+id/cvExport"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/colorCardSecond">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivSettings"
+                        android:layout_width="116dp"
+                        android:layout_height="116dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_settings"
+                        android:tint="@color/colorMenuLogo"/>
+
+                    <TextView
+                        android:id="@+id/tvSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivSettings"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Pengaturan"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorText1"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
